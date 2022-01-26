@@ -5,7 +5,7 @@ write_files:
       core.trust_password: password
     networks:
     - config:
-        ipv4.address: 192.168.1.2/24
+        ipv4.address: 192.168.1.65/24
         ipv6.address: none
       description: ""
       name: lxdbr0
@@ -22,7 +22,7 @@ write_files:
       description: ""
       devices:
         eth0:
-          name: eth0
+          name: enp1s0
           network: lxdbr0
           type: nic
         root:
